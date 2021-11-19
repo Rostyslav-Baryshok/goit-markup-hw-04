@@ -59,8 +59,6 @@ body {
 }
 /* Header */
 .header {
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 .container {
@@ -99,6 +97,42 @@ body {
 .our-team-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #ffffff;
+}
+.social-networks-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-networks-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-networks-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: #afb1b8;
+}
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.social-networks-link:hover,
+.social-networks-link:focus,
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 .header-container {
   display: flex;
@@ -269,14 +303,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.profession {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
+
 /* Our clients */
 .our-clients {
   padding-top: 94px;
@@ -356,6 +383,30 @@ body {
 .contact-link-footer:focus {
   color: var(--accent-color);
 }
+.footer-content {
+  display: flex;
+}
+.footer-content-address {
+  margin-right: 70px;
+}
+.social-networks-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-social-networks-content {
+  padding-top: 15px;
+}
+.footer-social-networks-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-networks-img {
+  fill: #ffffff;
+}
+
 .portfolio-section {
   margin-top: 94px;
   margin-bottom: 94px;
@@ -387,6 +438,8 @@ body {
 .secondary-btn.current {
   color: var(--white-text);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Portfolio cards */
 .portfolio-item-title {
