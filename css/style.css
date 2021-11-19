@@ -7,6 +7,7 @@
   --hero-footer-background: #2f303a;
   --logo-color: #000000;
   --contact-link-footer: rgba(255, 255, 255, 0.6);
+  --social-networks-color: #ffffff;
 }
 h1,
 h2,
@@ -131,7 +132,7 @@ body {
 .social-networks-link:focus,
 .footer-social-media-link:hover,
 .footer-social-media-link:focus {
-  fill: #ffffff;
+  fill: var(--social-networks-color);
   background-color: var(--accent-color);
 }
 .header-container {
@@ -394,7 +395,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--social-networks-color);
   margin-bottom: 20px;
 }
 .footer-social-networks-content {
@@ -404,7 +405,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-networks-img {
-  fill: #ffffff;
+  fill: var(--social-networks-color);
 }
 
 .portfolio-section {
